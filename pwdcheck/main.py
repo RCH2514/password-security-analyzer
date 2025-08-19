@@ -9,6 +9,7 @@ import time
 import pyfiglet
 import random
 import string
+import argparse
 
 def slow_print(text, delay=0.05):
     """Print text one character at a time for a typewriter effect"""
@@ -148,7 +149,21 @@ def generate_strong_password(length=16):
 
 # --- MAIN ---
 def main():
+    parser = argparse.ArgumentParser(
+        description="PWD-CHECK: Password Security Analyzer by QU33NR"
+    )
+    parser.add_argument(
+        "-g", "--generate",
+        action="store_true",
+        help="Generate a strong password immediately"
+    )
+    args = parser.parse_args()
     banner()
+    if args.generate:
+        # If user passed -g, generate and print a strong password directly
+        strong_pwd = generate_strong_password()
+        print("\n🔑 Generated strong password:", strong_pwd)
+        return  # exit after generating
     try:
         pwd = getpass.getpass("Enter a password to analyze: ")
 

@@ -16,17 +16,17 @@ def slow_print(text, delay=0.05):
     for char in text:
         print(char, end="", flush=True)
         time.sleep(delay)
-    print()  # new line at the end
+    print()  # to add a new line at the end
 
 def banner():
     # ASCII banner
     ascii_banner = pyfiglet.figlet_format("PWD-CHECK", font="slant")
     
-    # Print ASCII banner slowly in green
+    
     for line in ascii_banner.split("\n"):
         slow_print("\033[1;32m" + line + "\033[0m", delay=0.005)
 
-    # Other text also in green
+    
     print("\033[1;32m" + "          Password Security Analyzer" + "\033[0m")
     print("\033[1;32m" + "                by QU33NR 👑" + "\033[0m")
     print("\033[1;32m" + "=======================================" + "\033[0m")
@@ -66,7 +66,7 @@ def has_keyboard_sequence(password, seq_length=4):
 def evaluate_rules(password):
     rules = {
         "length": len(password) >= MIN_LEN,
-        "uppercase": any(c.isupper() for c in password),                  # uses original pw
+        "uppercase": any(c.isupper() for c in password),                  
         "lowercase": any(c.islower() for c in password),
         "digit": any(c.isdigit() for c in password),
         "special": any(c in SPECIAL_CHARS for c in password),
@@ -141,9 +141,9 @@ def generate_strong_password(length=16):
 
         password = ''.join(password_chars)
 
-        # 4. Optional: check uniqueness ratio
+        # 4. check uniqueness ratio
         if len(set(password)) / len(password) >= 0.6:
-            # 5. Optional: check keyboard sequences
+            # 5. check keyboard sequences
             if not has_keyboard_sequence(password, seq_length=4):
                 return password
 

@@ -201,5 +201,3 @@ def main():
     except KeyboardInterrupt:
         print("\n❌ Aborted by user.")
         sys.exit(0)
-if __name__ == "__main__":
-    main()

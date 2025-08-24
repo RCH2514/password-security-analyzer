@@ -10,7 +10,7 @@ Created by **QU33NR** 👑
 
 ---
 
-## Features ✨
+## Features 
 
 - ✅ Checks password strength based on:
   - Minimum length (12+ characters)
@@ -28,7 +28,7 @@ Created by **QU33NR** 👑
 
 ---
 
-## Installation ⚡
+## Installation 
 
 ```bash
 pip install git+https://github.com/RCH2514/password-security-analyzer.git
@@ -38,7 +38,7 @@ Make sure ~/.local/bin is in your $PATH:
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
-## Usage 🚀
+## Usage 
 ### Analyze a password:
 ```bash
 pwdcheck
@@ -53,7 +53,7 @@ pwdcheck -g
 ```
 - Immediately generates a strong, random password.
 - Avoids keyboard sequences and repeated characters.
-## Example Output 🖋️
+## Example Output 
 ```yaml
 $ pwdcheck
 Enter a password to analyze: Hello123+
@@ -77,14 +77,14 @@ Do you want us to generate a strong password for you? (y/n)
 ```yaml
 🔑 Generated strong password: lP+1V1dbNVhZn13y
 ```
-## Requirements 🛠️
+## Requirements 
 - Python 3.6+
 
 - requests
 
 - pyfiglet   
-## Contributing 🤝
+## Contributing 
 Feel free to open issues or submit pull requests.
 Suggestions for new features, improvements, or bug fixes are welcome!
-## License 📜
+## License 
 This project is licensed under the MIT License                                          

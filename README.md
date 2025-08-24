@@ -12,17 +12,17 @@ Created by **QU33NR** 👑
 
 ## Features 
 
-- ✅ Checks password strength based on:
+- Checks password strength based on:
   - Minimum length (12+ characters)
   - Uppercase & lowercase letters
   - Digits and special symbols
   - Character uniqueness
   - Detection of keyboard sequences (e.g., `1234`, `qwerty`, `azerty`)  
-- 🔒 Passwords are entered **securely** — they **won’t be visible** while typing in the terminal.
-- 🔎 Checks if the password has appeared in **data breaches** using [Have I Been Pwned API](https://haveibeenpwned.com/Passwords)  
-- 🎯 Generates **strong, random passwords**  
-- 🎨 Colorful ASCII banner & animated terminal output  
-- 🖥️ Simple CLI interface:
+-  Passwords are entered **securely** — they **won’t be visible** while typing in the terminal.
+-  Checks if the password has appeared in **data breaches** using [Have I Been Pwned API](https://haveibeenpwned.com/Passwords)  
+-  Generates **strong, random passwords**  
+-  Colorful ASCII banner & animated terminal output  
+-  Simple CLI interface:
   - `pwdcheck` → analyze your password  
   - `pwdcheck -g` → generate a strong password instantly  
 
